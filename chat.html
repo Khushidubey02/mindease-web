@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MindEase</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat.html" class="active">Chat</a></li>
+                <li><a href="mood.html">Mood</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content chat-page">
+        <div class="chat-container card">
+            <h2>Let's Talk <span class="chat-icon">💬</span></h2>
+            <div class="chat-messages">
+                <div class="message user-message">
+                    <p>I feel really stressed today.</p>
+                </div>
+                <div class="message bot-message">
+                    <p>I'm here for you. Would you like to try a breathing exercise or talk more?</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" placeholder="Type your message..." class="input-field">
+                <button class="btn primary-btn send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

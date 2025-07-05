@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Meditation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MindEase</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="mood.html">Mood</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="meditation.html" class="active">Meditation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content meditation-page">
+        <div class="breathing-exercise">
+            <h2 class="breathing-text">Breathe In</h2>
+            <div class="breathing-circle"></div>
+            <p class="affirmation">"You are safe. You are calm. You are in control."</p>
+
+            <div class="music-player-option">
+                <p>Optional: Play calming music 🎶</p>
+                <div class="music-player">
+                    <button class="play-btn">▶</button>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time-display">0:00 / 8:12</span>
+                    <button class="volume-btn">🔊</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        
+        const breathingCircle = document.querySelector('.breathing-circle');
+        const breathingText = document.querySelector('.breathing-text');
+        let breathState = true; 
+
+        function animateBreathing() {
+            if (breathState) {
+                breathingCircle.style.transform = 'scale(1.2)'; 
+                breathingCircle.style.backgroundColor = 'var(--accent-color)'; 
+                breathingText.textContent = 'Breathe In';
+            } else {
+                breathingCircle.style.transform = 'scale(0.8)'; 
+                breathingCircle.style.backgroundColor = 'var(--primary-gradient-start)'; 
+                breathingText.textContent = 'Breathe Out';
+            }
+            breathState = !breathState;
+        }
+
+        
+        setInterval(animateBreathing, 4000);
+
+        
+        animateBreathing();
+    </script>
+</body>
+</html>
