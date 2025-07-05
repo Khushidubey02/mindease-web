@@ -5,7 +5,7 @@
 
 **MindEase** is a smart mental wellness chatbot web application aimed at helping users express themselves, talk about their feelings, and receive empathetic responses in real-time.
 
-> ⚠ This project is currently **under development**. New features like GPT-based replies, user authentication, and analytics integration are actively being worked on. Stay tuned!
+>  This project is currently **under development**. New features like GPT-based replies, user authentication, and analytics integration are actively being worked on. Stay tuned!
 
 ---
 
